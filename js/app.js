@@ -27,7 +27,7 @@ const showProducts = (products) => {
       <h4>Count:  ${product.rating.count}</h4>
       
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now addToCart">add to cart</button>
-      <button id="details-btn" class="btn btn-danger">Details</button>
+      <button id="details-btn" class="details">Details</button>
       </div>
       `;
     document.getElementById("all-products").appendChild(div);
@@ -58,7 +58,7 @@ const updatePrice = (id, value) => {
 
 // set innerText function
 const setInnerText = (id, value) => {
-  document.getElementById(id).innerText = Math.round(value);
+  document.getElementById(id).innerText = (value.toFixed(2));
 };
 
 // update delivery charge and total Tax
