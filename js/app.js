@@ -11,8 +11,8 @@ const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
     const image = product.image;
-    const rate = product.rating.rate;
-    const count = product.rating.count;
+    // const rate = product.rating.rate;
+    // const count = product.rating.count;
     const div = document.createElement("div");
     div.classList.add("product");
     div.innerHTML = `
